@@ -4,22 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/favicon/logo.ico" />
     <link href="./output.css" rel="stylesheet" />
     <title>DinhCuong Coffee</title>
+    <script src="./main.js" async type="text/javascript"></script>
   </head>
   <body>
     <div id="root">
-      <div class="max-w-screen-2xl text-base mx-auto px-8 bg-slate-300 content-wrapper">
-        <header class="py-6 mx-10">
-          <nav class="flex flex-row justify-between items-center">
+      <div class="font-Karla max-w-screen-2xl text-base mx-auto px-8 bg-slate-300 content-wrapper">
+        <header class="p6 mx-auto">
+          <nav class="relative flex flex-row justify-between items-center">
             <div class="basis-2/6 text-center text-xl font-semibold cursor-pointer logo">
               DinhCuongCoffee
             </div>
 
             <ul
-              class="basis-3/6 flex items-center justify-end gap-8 uppercase text-sm font-medium text-gray-500"
+              id="dcd-top-menu"
+              class="lg:basis-3/6 hidden lg:flex lg:items-center lg:justify-end lg:gap-8 uppercase text-sm font-medium text-gray-500"
             >
-              <li class="dcd-top-menu-item">
+              <li class="dcd-top-menu-item dcd-top-menu-item-active">
                 <a href="#" class="">Home</a>
               </li>
               <li class="dcd-top-menu-item">
@@ -43,7 +46,7 @@
             </ul>
 
             <ul
-              class="basis-1/6 flex text-center items-center justify-start uppercase text-sm font-medium text-gray-500 ml-16"
+              class="basis-3/6 lg:basis-1/6 flex text-center items-center justify-end lg:justify-start uppercase text-sm font-medium text-gray-500 ml-16"
             >
               <li class="dcd-top-menu-item">
                 <a href="" class="flex items-center">
@@ -66,6 +69,26 @@
                 </a>
               </li>
             </ul>
+
+            <div
+              id="dcd-toggle-top-menu-icon"
+              class="lg:hidden basis-1/6 flex items-center px-3 sm:px-8 cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="dcd-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
           </nav>
         </header>
 
