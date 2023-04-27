@@ -9,7 +9,7 @@
 }
 
 .dcd-top-menu-item {
-  @apply cursor-pointer py-1 hover:text-gray-800 relative lg:after:absolute lg:after:h-0.5 lg:after:w-0 hover:lg:after:w-full lg:after:bottom-0 lg:after:left-0 lg:after:bg-light-coffee lg:after:transition-all lg:after:ease-in-out lg:after:duration-300;
+  @apply cursor-pointer py-1 hover:text-gray-800 relative lg:after:absolute lg:after:h-0.5 lg:after:w-0 hover:lg:after:w-full lg:after:bottom-0 lg:after:left-0 lg:after:bg-coffee-200 lg:after:transition-all lg:after:ease-in-out lg:after:duration-300;
 }
 
 .dcd-top-menu-item-active {
@@ -22,4 +22,16 @@
 
 .dcd-badge-circle {
   @apply text-xs text-center rounded-full px-1.5;
+}
+
+.dcd-subheading {
+  @apply flex justify-center items-center mb-24;
+}
+
+.dcd-subheading-deco-line {
+  @apply w-8 h-px bg-gray-200;
+}
+
+.dcd-subheading-label {
+  @apply uppercase text-sm text-center text-gray-500 font-medium  tracking-widest mx-4;
 }
