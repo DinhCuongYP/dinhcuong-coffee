@@ -93,7 +93,7 @@
         </header>
 
         <main>
-          <div class="slider h-[530px] bg-[url('./img/slider-bg.jpeg')] bg-cover bg-bottom">
+          <div class="slider h-[530px] bg-[url('./img/slider-bg.jpeg')] bg-no-repeat bg-cover bg-bottom">
             <div class="w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-40">
               <div class="mx-16 text-center text-white">
                 <div class="uppercase mb-6">Best Place To Buy Coffee</div>
@@ -104,7 +104,7 @@
                 </div>
                 <div class="flex justify-center">
                   <div
-                    class="uppercase bg-white text-gray-900 text-sm w-max tracking-wide px-8 py-4 cursor-pointer hover:bg-opacity-95 font-medium"
+                    class="dcd-btn bg-white text-gray-900 text-sm w-max"
                   >
                     Explore Our Products
                   </div>
@@ -114,26 +114,24 @@
           </div>
           <!--End slider-->
 
-          <div class="coffee-story">
-            <div class="w-full h-full flex justify-center items-center">
-              <div class="px-4 sm:px-16 md:px-32 lg:px-64 xl:px-96 py-32 text-center">
-                <div class="text-3xl font-normal leading-10 mb-6">
-                  Even the all-powerful Pointing has no control about the blind texts.
-                </div>
-                <div class="text-gray-500 leading-7 mb-6">
-                  It is a paradisematic country, in which roasted parts of sentences fly into your
-                  mouth. <br />
-                  Even the all-powerful Pointing has no control about the blind texts it is an
-                  almost unorthographic life One day however a small line of blind text by the name
-                  of Lorem Ipsum decided to leave for the far World of Grammar.
-                </div>
-                <div class="">
-                  <a
-                    href="#"
-                    class="text-coffee-200 hover:text-coffee-400 relative after:absolute after:h-0.5 after:w-full after:-bottom-2 after:left-0 after:bg-coffee-50 hover:after:bg-coffee-200 after:transition-all after:ease-in-out after:duration-400"
-                    >Read the full Story</a
-                  >
-                </div>
+          <div class="coffee-story flex justify-center items-center">
+            <div class="px-4 sm:px-16 md:px-32 lg:px-64 xl:px-96 py-32 text-center">
+              <div class="text-3xl font-normal leading-10 mb-6">
+                Even the all-powerful Pointing has no control about the blind texts.
+              </div>
+              <div class="text-gray-500 leading-7 mb-6">
+                It is a paradisematic country, in which roasted parts of sentences fly into your
+                mouth. <br />
+                Even the all-powerful Pointing has no control about the blind texts it is an
+                almost unorthographic life One day however a small line of blind text by the name
+                of Lorem Ipsum decided to leave for the far World of Grammar.
+              </div>
+              <div class="">
+                <a
+                  href="#"
+                  class="text-coffee-200 hover:text-coffee-400 relative after:absolute after:h-0.5 after:w-full after:-bottom-2 after:left-0 after:bg-coffee-50 hover:after:bg-coffee-200 after:transition-all after:ease-in-out after:duration-400"
+                  >Read the full Story</a
+                >
               </div>
             </div>
           </div>
@@ -144,7 +142,48 @@
             <div class="dcd-subheading-label ">Featured Mugs</div>
             <div class="dcd-subheading-deco-line"></div>
           </div>
-          <div class="featured-mugs">featured-mugs</div>
+          <div class="featured-mugs w-[95%] lg:w-[65%] mx-auto mb-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4">
+              <div class="dcd-product-cart">
+                <div class="h-[400px] sm:h-[540px] bg-[url('./img/featured-mug01.jpg')] bg-no-repeat bg-cover bg-center">
+                  <a class="" alt="dinhcuongdev" href="#">
+                    <div class="relative group w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 ">
+                      <div class="dcd-btn absolute bg-white text-gray-900 text-[13px] hidden group-hover:block group-hover:animate-faceIn w-11/12 bottom-4 left-1/2 -translate-x-1/2">Explore Mug</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="text-center mt-9">
+                  <a href="#" alt="product-dcd">
+                    <div class="text-xl mb-1 hover:text-coffee-400">Pink Premium Ceramic</div>
+                  </a>
+                  <div class="">
+                    <span class="text-gray-500">$99.00 USD</span>
+                  </div>
+                </div>
+              </div>
+              <div class="dcd-product-cart">
+                <div class="h-[400px] sm:h-[540px] bg-[url('./img/featured-mug02.jpg')] bg-no-repeat bg-cover bg-center">
+                  <a class="" alt="dinhcuongdev" href="#">
+                    <div class="relative group w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 ">
+                      <div class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">On Sale.</div>
+                      <div class="dcd-btn absolute bg-white text-gray-900 text-[13px] hidden group-hover:block group-hover:animate-faceIn w-11/12 bottom-4 left-1/2 -translate-x-1/2 ">
+                        Explore Mug
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="text-center mt-9">
+                  <a href="#" alt="product-dcd">
+                    <div class="text-xl mb-1 hover:text-coffee-400">Golden Designers Mug</div>
+                  </a>
+                  <div class="">
+                    <span class="text-xl text-coffee-400 mr-3">$50.00</span>
+                    <span class="text-gray-500 line-through">$69.00 USD</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <!--End featured-mugs-->
 
           <div class="dcd-subheading">

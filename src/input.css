@@ -35,3 +35,7 @@
 .dcd-subheading-label {
   @apply uppercase text-sm text-center text-gray-500 font-medium  tracking-widest mx-4;
 }
+
+.dcd-btn {
+  @apply text-center uppercase  tracking-wide px-8 py-4 cursor-pointer hover:bg-opacity-90 font-medium;
+}
