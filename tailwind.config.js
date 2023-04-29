@@ -14,13 +14,12 @@ module.exports = {
         },
       },
       keyframes: {
-        slidedown: {
-          "0%": { transform: "translateY(-100%)" },
-          "100%": { transform: "translateY(0%)" },
-        },
+        slidedown: {"0%": { transform: "translateY(-100%)" },"100%": { transform: "translateY(0%)" }, },
+        faceIn: { from: { opacity: 0 }, to: { opacity: 1 } }
       },
       animation: {
-        slidedown: "slidedown .4s ease-in-out",
+        slidedown: "slidedown .5s ease-in-out",
+        faceIn: "faceIn .5s ease-in-out",
       },
     },
   },
