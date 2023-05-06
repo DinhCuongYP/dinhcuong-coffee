@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -25,7 +25,7 @@
 }
 
 .dcd-subheading {
-  @apply flex justify-center items-center mb-24;
+  @apply flex justify-center items-center my-20;
 }
 
 .dcd-subheading-deco-line {
@@ -38,4 +38,51 @@
 
 .dcd-btn {
   @apply text-center uppercase  tracking-wide px-8 py-4 cursor-pointer hover:bg-opacity-90 font-medium;
+}
+
+#root {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+.dcd-no-paralax,
+.dcd-paralax {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.dcd-paralax {
+  height: 50vh;
+}
+
+.dcd-no-paralax {
+  height: auto;
+  z-index: 999;
+  background: white;
+}
+
+.dcd-paralax-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@media screen(xl) {
+  .dcd-paralax {
+    height: 70vh;
+    transform-style: preserve-3d;
+  }
+
+  .dcd-paralax-image {
+    transform: translateZ(-1px) scale(1.5);
+  }
 }
